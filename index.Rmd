@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "El Universo de los Datos"
+author: "Héctor Henry Jurado Soto"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
