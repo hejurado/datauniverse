@@ -5,5 +5,11 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Pensamiento estadístico
+
+```{r, out.width='50%', fig.align='center'}
+knitr::include_graphics('img/remsmamd.jpg')
+```
+
+# Bienvenido
+Este libro presenta un enfoque intuitivo en analisis, preparacion  y aprendi de datos  con ejemplos practicos  reales
 
