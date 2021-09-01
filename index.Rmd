@@ -7,11 +7,12 @@ site: bookdown::bookdown_site
 
 
 
-test
+
 
 
 # Bienvenido
-Este libro presenta un enfoque intuitivo en analisis, preparacion  y aprendi de datos  con ejemplos practicos  reales
-```{r echo=TRUE, out.width='100%'}
+Este libro presenta un enfoque práctico   en la exploracion, el  análisis, preparación  y aprendizaje automático de datos  con ejemplos reales
+```{r echo=FALSE, out.width='100%'}
+
 knitr::include_graphics('./img/remsmamd.jpg')
 ```
