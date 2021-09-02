@@ -11,7 +11,8 @@ site: bookdown::bookdown_site
 
 
 # Bienvenido
-Este libro presenta un enfoque práctico   en la exploracion, el  análisis, preparación  y aprendizaje automático de datos  con ejemplos reales
+Este libro presenta un enfoque práctico   en la exploración, el  análisis, preparación  y aprendizaje automático de datos, muestra  ejemplos reales obtenidos desde mi propia experiencia con información
+
 ```{r echo=FALSE, out.width='100%'}
 
 knitr::include_graphics('./img/remsmamd.jpg')
