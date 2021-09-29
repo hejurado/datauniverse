@@ -1,6 +1,4 @@
 bienvenido
 analizando-los-datos
 a-caucus-race-and-a-long-tale
-r-markdown
-including-plots
 explorando-los-datos
