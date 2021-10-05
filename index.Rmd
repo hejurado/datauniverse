@@ -3,6 +3,9 @@ title: "El Universo de los Datos"
 author: "Héctor Henry Jurado Soto"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+bibliography: [books.bib]
+biblio-style: apalike
+link-citations: yes
 ---
 
 

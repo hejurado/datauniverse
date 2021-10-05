@@ -1,2 +1,44 @@
-# Analizando los datos
+# Una  aproximación a la estadística
+
+Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? @anderson2015
+
+
+Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico “jeringas con agujas desechables”, de esos datos obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?
+
+| 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    |
+|-----|--------|-----|--------|-----|--------|-----|--------|-----|--------|
+| 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    |
+| 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    |
+| 652 | 2223   | 383 | 652    | 652 | 50100  | 383 | 652    | 652 | 50100  |
+| 383 | 652    | 652 | 50100  | 383 | 652    | 652 | 50100  | 383 | 652    |
+| 652 | 79700  | 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 103900 |
+| 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 103900 | 383 | 652    |
+| 652 | 103900 | 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 126400 |
+| 258 | 652    | 652 | 126400 | 258 | 652    | 652 | 148700 | 258 | 652    |
+| 652 | 251100 | 652 | 652    | 652 | 334800 | 652 | 652    | 652 | 769900 |
+
+
+## en R
+
+```{r}
+c(383,652,652,652,383,652,652,652,
+383,652,652,
+652,383,652,652,652,
+383,652,652,652,383,652,652,652,383,
+652,652,652,383,652,652,2223,383,652,652,
+50100,383,652,652,50100,383,652,652,50100,383,652,652,
+50100,383,652,652,79700,
+383,652,652,103900,383,652,652,103900,
+383,652,652,103900,383,652,652,103900,
+383,652,652,103900,383,652,652,103900,
+383,652,652,126400,258,652,652,126400,
+258,652,652,148700,258,652,652,251100,
+652,652,652,334800,652,652,652,769900) 
+```
+
+Para responder a esta pregunta estudiemos algunos conceptos básicos
+
+
+
+
 
