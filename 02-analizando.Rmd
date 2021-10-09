@@ -1,6 +1,6 @@
 # Una  aproximación a la estadística
 
-Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? @anderson2015
+Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? @heumann2016
 
 
 Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico “jeringas con agujas desechables”, de esos datos obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?
