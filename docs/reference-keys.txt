@@ -1,3 +1,5 @@
+thm:pyth
+def:defmedia
 bienvenido
 una-aproximación-a-la-estadística
 en-r

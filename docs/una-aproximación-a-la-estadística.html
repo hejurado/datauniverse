@@ -24,7 +24,7 @@
 <meta name="author" content="Héctor Henry Jurado Soto" />
 
 
-<meta name="date" content="2021-10-14" />
+<meta name="date" content="2021-10-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -188,134 +188,18 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="una-aproximación-a-la-estadística" class="section level1" number="2">
 <h1><span class="header-section-number">Capítulo 2</span> Una aproximación a la estadística</h1>
-<p>Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? <span class="citation"><a href="#ref-heumann2016" role="doc-biblioref">Heumann, Schomaker, and Shalabh</a> (<a href="#ref-heumann2016" role="doc-biblioref">2016</a>)</span></p>
-<p>Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico “jeringas con agujas desechables,” de esos datos obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?</p>
-<table>
-<thead>
-<tr class="header">
-<th>383</th>
-<th>652</th>
-<th>652</th>
-<th>652</th>
-<th>383</th>
-<th>652</th>
-<th>652</th>
-<th>652</th>
-<th>383</th>
-<th>652</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>652</td>
-<td>652</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-</tr>
-<tr class="even">
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-<td>383</td>
-<td>652</td>
-</tr>
-<tr class="odd">
-<td>652</td>
-<td>2223</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>50100</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>50100</td>
-</tr>
-<tr class="even">
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>50100</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>50100</td>
-<td>383</td>
-<td>652</td>
-</tr>
-<tr class="odd">
-<td>652</td>
-<td>79700</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>103900</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>103900</td>
-</tr>
-<tr class="even">
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>103900</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>103900</td>
-<td>383</td>
-<td>652</td>
-</tr>
-<tr class="odd">
-<td>652</td>
-<td>103900</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>103900</td>
-<td>383</td>
-<td>652</td>
-<td>652</td>
-<td>126400</td>
-</tr>
-<tr class="even">
-<td>258</td>
-<td>652</td>
-<td>652</td>
-<td>126400</td>
-<td>258</td>
-<td>652</td>
-<td>652</td>
-<td>148700</td>
-<td>258</td>
-<td>652</td>
-</tr>
-<tr class="odd">
-<td>652</td>
-<td>251100</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-<td>334800</td>
-<td>652</td>
-<td>652</td>
-<td>652</td>
-<td>769900</td>
-</tr>
-</tbody>
-</table>
+<p>Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? <span class="citation"><a href="#ref-heumann2016" role="doc-biblioref">Heumann, Schomaker, and Shalabh</a> (<a href="#ref-heumann2016" role="doc-biblioref">2016</a>)</span> ,</p>
+<p>Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico “jeringas con agujas desechables,” de esos datos <span class="citation"><a href="#ref-R-ggplot2" role="doc-biblioref">Wickham et al.</a> (<a href="#ref-R-ggplot2" role="doc-biblioref">2021</a>)</span> obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?</p>
+<div class="line-block">383 | 652 | 652 | 652 | 383 | 652 | 652 | 652 | 383 | 652 |<br />
+652 | 652 | 383 | 652 | 652 | 652 | 383 | 652 | 652 | 652 |<br />
+383 | 652 | 652 | 652 | 383 | 652 | 652 | 652 | 383 | 652 |<br />
+652 | 2223 | 383 | 652 | 652 | 50100 | 383 | 652 | 652 | 50100 |<br />
+383 | 652 | 652 | 50100 | 383 | 652 | 652 | 50100 | 383 | 652 |<br />
+652 | 79700 | 383 | 652 | 652 | 103900 | 383 | 652 | 652 | 103900 |<br />
+383 | 652 | 652 | 103900 | 383 | 652 | 652 | 103900 | 383 | 652 |<br />
+652 | 103900 | 383 | 652 | 652 | 103900 | 383 | 652 | 652 | 126400 |<br />
+258 | 652 | 652 | 126400 | 258 | 652 | 652 | 148700 | 258 | 652 |<br />
+652 | 251100 | 652 | 652 | 652 | 334800 | 652 | 652 | 652 | 769900 |</div>
 <div id="en-r" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> en R</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="una-aproximación-a-la-estadística.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">383</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">383</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,</span>
@@ -331,16 +215,32 @@ div.csl-indent {
 <span id="cb1-11"><a href="una-aproximación-a-la-estadística.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dv">383</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">126400</span>,<span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">126400</span>,</span>
 <span id="cb1-12"><a href="una-aproximación-a-la-estadística.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">148700</span>,<span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">251100</span>,</span>
 <span id="cb1-13"><a href="una-aproximación-a-la-estadística.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">334800</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">769900</span>) </span></code></pre></div>
-<pre><code>##   [1]    383    652    652    652    383    652    652    652    383    652    652    652
-##  [13]    383    652    652    652    383    652    652    652    383    652    652    652
-##  [25]    383    652    652    652    383    652    652   2223    383    652    652  50100
-##  [37]    383    652    652  50100    383    652    652  50100    383    652    652  50100
-##  [49]    383    652    652  79700    383    652    652 103900    383    652    652 103900
-##  [61]    383    652    652 103900    383    652    652 103900    383    652    652 103900
-##  [73]    383    652    652 103900    383    652    652 126400    258    652    652 126400
-##  [85]    258    652    652 148700    258    652    652 251100    652    652    652 334800
-##  [97]    652    652    652 769900</code></pre>
-<p>Para responder a esta pregunta estudiemos algunos conceptos básicos</p>
+<pre><code>##   [1]    383    652    652    652    383    652    652    652    383    652    652    652    383    652    652
+##  [16]    652    383    652    652    652    383    652    652    652    383    652    652    652    383    652
+##  [31]    652   2223    383    652    652  50100    383    652    652  50100    383    652    652  50100    383
+##  [46]    652    652  50100    383    652    652  79700    383    652    652 103900    383    652    652 103900
+##  [61]    383    652    652 103900    383    652    652 103900    383    652    652 103900    383    652    652
+##  [76] 103900    383    652    652 126400    258    652    652 126400    258    652    652 148700    258    652
+##  [91]    652 251100    652    652    652 334800    652    652    652 769900</code></pre>
+<p>Para responder a esta pregunta estudiemos algunas definiciones</p>
+<div class="definition">
+<p><span id="def:defmedia" class="definition"><strong>Definición 2.1  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+</div>
+<div class="theorem">
+<p><span id="thm:pyth" class="theorem"><strong>Teorema 2.1  (Pythagorean theorem) </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+</div>
+<div class="definition">
+<p><span id="def:defmedia" class="definition"><strong>Definición 2.1  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+</div>
+
+<div class="theorem">
+<p><span id="thm:pyth" class="theorem"><strong>Teorema 2.1  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
+and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<span class="math display">\[a^2 + b^2 = c^2\]</span>
+</div>
 
 </div>
 </div>
@@ -348,6 +248,9 @@ div.csl-indent {
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-heumann2016" class="csl-entry">
 Heumann, C., M. Schomaker, and Shalabh. 2016. <em>Introduction to Statistics and Data Analysis with Exercises, Solutions and Applications in r</em>. <em>Statistics</em>. <a href="https://link.springer.com/">https://link.springer.com/</a>.
+</div>
+<div id="ref-R-ggplot2" class="csl-entry">
+Wickham, Hadley, Winston Chang, Lionel Henry, Thomas Lin Pedersen, Kohske Takahashi, Claus Wilke, Kara Woo, Hiroaki Yutani, and Dewey Dunnington. 2021. <em>Ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics</em>.
 </div>
 </div>
             </section>
@@ -411,6 +314,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

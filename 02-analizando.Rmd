@@ -1,22 +1,19 @@
-# Una  aproximación a la estadística
+# Una aproximación a la estadística
 
-Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? @heumann2016
+Iniciemos con un sencillo problema relacionado con la calidad en algunos datos de costos digitados en un sistema, como medimos la calidad de estos datos? como deberíamos controlar la calidad de estos datos? @heumann2016 ,
 
+Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico "jeringas con agujas desechables", de esos datos @R-ggplot2 obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?
 
-Una empresa ha registrado la siguiente información de costo unitarios de un insumo médico “jeringas con agujas desechables”, de esos datos obtenemos una muestra de cien(100) valores digitados en diferentes fechas, esta información fue registrada con la calidad esperada?
-
-| 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    |
-|-----|--------|-----|--------|-----|--------|-----|--------|-----|--------|
-| 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    |
-| 383 | 652    | 652 | 652    | 383 | 652    | 652 | 652    | 383 | 652    |
-| 652 | 2223   | 383 | 652    | 652 | 50100  | 383 | 652    | 652 | 50100  |
-| 383 | 652    | 652 | 50100  | 383 | 652    | 652 | 50100  | 383 | 652    |
-| 652 | 79700  | 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 103900 |
-| 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 103900 | 383 | 652    |
-| 652 | 103900 | 383 | 652    | 652 | 103900 | 383 | 652    | 652 | 126400 |
-| 258 | 652    | 652 | 126400 | 258 | 652    | 652 | 148700 | 258 | 652    |
-| 652 | 251100 | 652 | 652    | 652 | 334800 | 652 | 652    | 652 | 769900 |
-
+| 383 \| 652 \| 652 \| 652 \| 383 \| 652 \| 652 \| 652 \| 383 \| 652 \|
+| 652 \| 652 \| 383 \| 652 \| 652 \| 652 \| 383 \| 652 \| 652 \| 652 \|
+| 383 \| 652 \| 652 \| 652 \| 383 \| 652 \| 652 \| 652 \| 383 \| 652 \|
+| 652 \| 2223 \| 383 \| 652 \| 652 \| 50100 \| 383 \| 652 \| 652 \| 50100 \|
+| 383 \| 652 \| 652 \| 50100 \| 383 \| 652 \| 652 \| 50100 \| 383 \| 652 \|
+| 652 \| 79700 \| 383 \| 652 \| 652 \| 103900 \| 383 \| 652 \| 652 \| 103900 \|
+| 383 \| 652 \| 652 \| 103900 \| 383 \| 652 \| 652 \| 103900 \| 383 \| 652 \|
+| 652 \| 103900 \| 383 \| 652 \| 652 \| 103900 \| 383 \| 652 \| 652 \| 126400 \|
+| 258 \| 652 \| 652 \| 126400 \| 258 \| 652 \| 652 \| 148700 \| 258 \| 652 \|
+| 652 \| 251100 \| 652 \| 652 \| 652 \| 334800 \| 652 \| 652 \| 652 \| 769900 \|
 
 ## en R
 
@@ -36,9 +33,33 @@ c(383,652,652,652,383,652,652,652,
 652,652,652,334800,652,652,652,769900) 
 ```
 
-Para responder a esta pregunta estudiemos algunos conceptos básicos
+Para responder a esta pregunta estudiemos algunas definiciones
+
+::: {#defmedia .definition}
+
+For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2$$
+:::
 
 
 
+::: {#pyth .theorem name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2$$
+:::
+
+::: {#defmedia .definition}
+For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2$$
+:::
 
 
+```{theorem pyth, name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+
+$$a^2 + b^2 = c^2$$
+```
