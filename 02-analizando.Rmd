@@ -36,13 +36,12 @@ c(383,652,652,652,383,652,652,652,
 Para responder a esta pregunta estudiemos algunas definiciones
 
 ::: {#defmedia .definition}
+La media aritmética de una variable se define como la suma de los valores de la variable multiplicados por su frecuencia relativa correspondiente
 
-For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
+Si llamamos $X$ a la variable y $x_i$ los valores que puede tomar la variable, la media aritmética se nota por $\bar{x}$ y se define por
 
-$$a^2 + b^2 = c^2$$
+$$\bar{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$
 :::
-
-
 
 ::: {#pyth .theorem name="Pythagorean theorem"}
 For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
@@ -50,12 +49,11 @@ For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b
 $$a^2 + b^2 = c^2$$
 :::
 
-::: {#defmedia .definition}
+::: {.definition}
 For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
 
 $$a^2 + b^2 = c^2$$
 :::
-
 
 ```{theorem pyth, name="Pythagorean theorem"}
 For a right triangle, if $c$ denotes the length of the hypotenuse

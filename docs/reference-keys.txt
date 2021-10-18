@@ -1,5 +1,6 @@
-thm:pyth
 def:defmedia
+thm:pyth
+def:unlabeled-div-1
 bienvenido
 una-aproximación-a-la-estadística
 en-r
