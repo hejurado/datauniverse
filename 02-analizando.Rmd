@@ -38,9 +38,9 @@ Para responder a esta pregunta estudiemos algunas definiciones
 ::: {#defmedia .definition}
 La media aritmética de una variable se define como la suma de los valores de la variable multiplicados por su frecuencia relativa correspondiente
 
-Si llamamos $X$ a la variable y $x_i$ los valores que puede tomar la variable, la media aritmética se nota por $\bar{x}$ y se define por
+Si llamamos $X$ a la variable y $x_i$ los valores que puede tomar la variable, la media aritmética se nota por $\overline{x}$ y se define por
 
-$$\bar{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$
+$$\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$
 :::
 
 ::: {#pyth .theorem name="Pythagorean theorem"}
