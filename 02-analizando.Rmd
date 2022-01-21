@@ -40,14 +40,21 @@ La media aritmética de una variable se define como la suma de los valores de la
 
 Si llamamos $X$ a la variable y $x_i$ los valores que puede tomar la variable, la media aritmética se nota por $\overline{x}$ y se define por
 
-$$\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$
+$$\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$ Si la variable $X$ es discreta se aplica directamente, si es continua se toma como valor $x_i$ , las marcas de clase de los intervalos y como frecuencias la de los intervalos
 :::
 
-::: {#pyth .theorem name="Pythagorean theorem"}
-For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
+**Propiedades**
 
-$$a^2 + b^2 = c^2$$
+La media de las diferencias a la media es cero es decir $$\sum_{i=1}^kf_{i}(x_{i}-\overline{x})=0$$
+
+::: {.proof}
+$$\sum_{i=1}^kf_{i}(x_{i}-\overline{x})= \sum_{i=1}^k(f_{i}x_{i}-f_i\overline{x})=\sum_{i=1}^kf_ix_i-\overline x\sum_{i=1}^kf_i=\overline{x}-\overline{x}=0 $$
 :::
+
+::: {.remark}
+La media de las desviaciones al cuadrado de los valores de la variable respecto una constante k cualquiera, se hace mínima, cuando la constante es igual a la media aritmética ($k=\overline{x}$)  
+:::
+
 
 ::: {.definition}
 For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have

@@ -10,7 +10,7 @@ link-citations: yes
 
 # Bienvenido
 
-Este libro presenta un enfoque práctico en la exploración, el análisis, preparación y aprendizaje automático de datos, muestra ejemplos reales obtenidos desde mi propia experiencia trabajando con información
+Este libro presenta un enfoque práctico en la exploración, el análisis, preparación y aprendizaje automático de datos, muestra ejemplos reales obtenidos desde mi propia experiencia trabajando con información muy interesante
 
 ```{r echo=FALSE, out.width='100%'}
 

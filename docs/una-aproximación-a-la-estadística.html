@@ -24,7 +24,7 @@
 <meta name="author" content="Héctor Henry Jurado Soto" />
 
 
-<meta name="date" content="2021-10-18" />
+<meta name="date" content="2022-01-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -215,29 +215,37 @@ div.csl-indent {
 <span id="cb1-11"><a href="una-aproximación-a-la-estadística.html#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dv">383</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">126400</span>,<span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">126400</span>,</span>
 <span id="cb1-12"><a href="una-aproximación-a-la-estadística.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">148700</span>,<span class="dv">258</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">251100</span>,</span>
 <span id="cb1-13"><a href="una-aproximación-a-la-estadística.html#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">334800</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">652</span>,<span class="dv">769900</span>) </span></code></pre></div>
-<pre><code>##   [1]    383    652    652    652    383    652    652    652    383    652    652    652    383    652    652    652    383
-##  [18]    652    652    652    383    652    652    652    383    652    652    652    383    652    652   2223    383    652
-##  [35]    652  50100    383    652    652  50100    383    652    652  50100    383    652    652  50100    383    652    652
-##  [52]  79700    383    652    652 103900    383    652    652 103900    383    652    652 103900    383    652    652 103900
-##  [69]    383    652    652 103900    383    652    652 103900    383    652    652 126400    258    652    652 126400    258
-##  [86]    652    652 148700    258    652    652 251100    652    652    652 334800    652    652    652 769900</code></pre>
+<pre><code>##   [1]    383    652    652    652    383    652    652    652    383    652
+##  [11]    652    652    383    652    652    652    383    652    652    652
+##  [21]    383    652    652    652    383    652    652    652    383    652
+##  [31]    652   2223    383    652    652  50100    383    652    652  50100
+##  [41]    383    652    652  50100    383    652    652  50100    383    652
+##  [51]    652  79700    383    652    652 103900    383    652    652 103900
+##  [61]    383    652    652 103900    383    652    652 103900    383    652
+##  [71]    652 103900    383    652    652 103900    383    652    652 126400
+##  [81]    258    652    652 126400    258    652    652 148700    258    652
+##  [91]    652 251100    652    652    652 334800    652    652    652 769900</code></pre>
 <p>Para responder a esta pregunta estudiemos algunas definiciones</p>
 <div class="definition">
 <p><span id="def:defmedia" class="definition"><strong>Definición 2.1  </strong></span>La media aritmética de una variable se define como la suma de los valores de la variable multiplicados por su frecuencia relativa correspondiente</p>
 <p>Si llamamos <span class="math inline">\(X\)</span> a la variable y <span class="math inline">\(x_i\)</span> los valores que puede tomar la variable, la media aritmética se nota por <span class="math inline">\(\overline{x}\)</span> y se define por</p>
-<p><span class="math display">\[\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}\]</span></p>
+<p><span class="math display">\[\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}\]</span> Si la variable <span class="math inline">\(X\)</span> es discreta se aplica directamente, si es continua se toma como valor <span class="math inline">\(x_i\)</span> , las marcas de clase de los intervalos y como frecuencias la de los intervalos</p>
 </div>
-<div class="theorem">
-<p><span id="thm:pyth" class="theorem"><strong>Teorema 2.1  (Pythagorean theorem) </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
-<p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
+<p><strong>Propiedades</strong></p>
+<p>La media de las diferencias a la media es cero es decir <span class="math display">\[\sum_{i=1}^kf_{i}(x_{i}-\overline{x})=0\]</span></p>
+<div class="proof">
+<p><span id="unlabeled-div-1" class="proof"><em>Demostración</em>. </span><span class="math display">\[\sum_{i=1}^kf_{i}(x_{i}-\overline{x})= \sum_{i=1}^k(f_{i}x_{i}-f_i\overline{x})=\sum_{i=1}^kf_ix_i-\overline x\sum_{i=1}^kf_i=\overline{x}-\overline{x}=0 \]</span></p>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-2" class="remark"><em>Nota:</em>. </span>La media de las desviaciones al cuadrado de los valores de la variable respecto una constante k cualquiera, se hace mínima, cuando la constante es igual a la media aritmética (<span class="math inline">\(k=\overline{x}\)</span>)</p>
 </div>
 <div class="definition">
-<p><span id="def:unlabeled-div-1" class="definition"><strong>Definición 2.2  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
+<p><span id="def:unlabeled-div-3" class="definition"><strong>Definición 2.2  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
 <p><span class="math display">\[a^2 + b^2 = c^2\]</span></p>
 </div>
-
+ffalse{-91-80-121-116-104-97-103-111-114-101-97-110-32-116-104-101-111-114-101-109-93-}
 <div class="theorem">
-<p><span id="thm:pyth" class="theorem"><strong>Teorema 2.1  (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
+<p><span id="thm:pyth" class="theorem"><strong>Teorema 2.1  \iffalse (Pythagorean theorem)  </strong></span>For a right triangle, if <span class="math inline">\(c\)</span> denotes the length of the hypotenuse
 and <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> denote the lengths of the other two sides, we have</p>
 <span class="math display">\[a^2 + b^2 = c^2\]</span>
 </div>
