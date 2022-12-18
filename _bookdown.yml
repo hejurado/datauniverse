@@ -15,6 +15,7 @@ language:
     prp: 'Proposición '
     exm: 'Ejemplo '
     exr: 'Ejercicio '
+    hyp: 'Hipotesis '
     proof: 'Demostración. '
     remark: 'Nota: '
     solution: 'Solución. '

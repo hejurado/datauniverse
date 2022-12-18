@@ -47,16 +47,15 @@ $$\overline{x}=\sum_{i=1}^kf_{i}x_{i}=\frac{1}{n}\sum_{i=1}^kn_{i}x_{i}$$ Si la 
 
 La media de las diferencias a la media es cero es decir $$\sum_{i=1}^kf_{i}(x_{i}-\overline{x})=0$$
 
-::: {.proof}
+::: proof
 $$\sum_{i=1}^kf_{i}(x_{i}-\overline{x})= \sum_{i=1}^k(f_{i}x_{i}-f_i\overline{x})=\sum_{i=1}^kf_ix_i-\overline x\sum_{i=1}^kf_i=\overline{x}-\overline{x}=0 $$
 :::
 
-::: {.remark}
-La media de las desviaciones al cuadrado de los valores de la variable respecto una constante k cualquiera, se hace mínima, cuando la constante es igual a la media aritmética ($k=\overline{x}$)  
+::: remark
+La media de las desviaciones al cuadrado de los valores de la variable respecto una constante k cualquiera, se hace mínima, cuando la constante es igual a la media aritmética ($k=\overline{x}$)
 :::
 
-
-::: {.definition}
+::: definition
 For a right triangle, if $c$ denotes the length of the hypotenuse and $a$ and $b$ denote the lengths of the other two sides, we have
 
 $$a^2 + b^2 = c^2$$
