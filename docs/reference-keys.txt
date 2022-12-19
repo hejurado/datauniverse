@@ -4,5 +4,5 @@ thm:pyth
 bienvenido
 una-aproximación-a-la-estadística
 en-r
-a-caucus-race-and-a-long-tale
+a-caucus-race-and-a-long-tale-and-this-is-a-test
 explorando-los-datos
